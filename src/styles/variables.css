@@ -1,0 +1,50 @@
+:root {
+  /* Brand Colors */
+  --color-navy: #09090b; /* Deep Obsidian */
+  --color-midnight: #18181b;
+  --color-skytrack: #10b981; /* Emerald */
+  --color-electric: #34d399;
+  --color-azure: #6ee7b7;
+  --color-soft-blue: #a7f3d0;
+  --color-ice: #d1fae5;
+  --color-white: #fafafa;
+
+  /* Feedback Colors */
+  --color-success: #10B981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+
+  /* UI Tokens */
+  --bg-app: var(--color-navy);
+  --bg-panel: rgba(24, 24, 27, 0.72);
+  --bg-panel-hover: rgba(24, 24, 27, 0.85);
+  --bg-input: rgba(255, 255, 255, 0.05);
+  --border-panel: 1px solid rgba(16, 185, 129, 0.15);
+  --border-panel-active: 1px solid rgba(16, 185, 129, 0.4);
+  
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-soft-blue);
+  --text-muted: rgba(209, 250, 229, 0.5);
+
+  /* Shadows & Glows */
+  --glow-primary: 0 0 15px rgba(16, 185, 129, 0.4);
+  --glow-subtle: 0 0 10px rgba(52, 211, 153, 0.15);
+  --shadow-panel: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  /* Typography */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Borders */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 9999px;
+
+  /* Z-Index */
+  --z-map: 10;
+  --z-panel: 20;
+  --z-overlay: 30;
+  --z-command: 40;
+  --z-loader: 50;
+}

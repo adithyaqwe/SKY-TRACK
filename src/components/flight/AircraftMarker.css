@@ -1,0 +1,24 @@
+.custom-aircraft-marker {
+  position: relative;
+}
+
+.custom-aircraft-marker.selected {
+  z-index: 1000 !important;
+}
+
+.premium-tooltip {
+  background: var(--bg-panel) !important;
+  border: var(--border-panel) !important;
+  color: var(--text-primary) !important;
+  backdrop-filter: blur(12px) !important;
+  font-family: var(--font-primary) !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 4px 8px !important;
+  box-shadow: var(--shadow-panel) !important;
+}
+
+.premium-tooltip::before {
+  display: none !important; /* hide default leaflet tooltip arrow */
+}

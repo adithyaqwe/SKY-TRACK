@@ -1,0 +1,42 @@
+.animated-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.animated-btn:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-skytrack);
+}
+
+.btn-primary {
+  background-color: var(--color-skytrack);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-electric);
+  box-shadow: var(--glow-primary);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.btn-icon {
+  padding: 8px;
+  border-radius: var(--radius-pill);
+}

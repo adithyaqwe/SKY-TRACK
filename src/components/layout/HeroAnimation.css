@@ -1,0 +1,84 @@
+.hero-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--color-navy);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.hero-path {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.5), transparent);
+  transform-origin: left center;
+}
+
+.hero-plane {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  color: var(--color-skytrack);
+  filter: drop-shadow(0 0 12px rgba(22, 119, 255, 0.6));
+}
+
+.hero-brand {
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-brand h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #7DD3FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-brand p {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.hero-radar-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid var(--color-skytrack);
+  opacity: 0;
+  animation: radarPulse 2.5s ease-out infinite;
+  z-index: -1;
+}
+
+.hero-radar-ring.ring-1 {
+  width: 100px;
+  height: 100px;
+  animation-delay: 0.5s;
+}
+
+.hero-radar-ring.ring-2 {
+  width: 150px;
+  height: 150px;
+  animation-delay: 1.5s;
+}

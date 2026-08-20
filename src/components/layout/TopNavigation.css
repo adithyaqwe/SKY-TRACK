@@ -1,0 +1,146 @@
+.top-nav-container {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: var(--z-panel);
+  display: flex;
+  justify-content: center;
+}
+
+.top-nav-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  padding: 8px 16px;
+  height: 64px;
+}
+
+.nav-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.brand-logo:hover {
+  opacity: 0.8;
+}
+
+.brand-icon {
+  color: var(--color-skytrack);
+  filter: drop-shadow(0 0 8px rgba(22, 119, 255, 0.4));
+  transform: rotate(45deg);
+}
+
+.brand-text h1 {
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+  margin: 0;
+  line-height: 1;
+}
+
+.brand-text span {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.search-trigger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-input);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  width: 100%;
+  max-width: 480px;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.search-trigger:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+  box-shadow: var(--glow-subtle);
+}
+
+.search-trigger:focus-visible {
+  outline: none;
+  border-color: var(--color-skytrack);
+  box-shadow: var(--glow-primary);
+}
+
+.search-icon {
+  color: var(--text-secondary);
+}
+
+.search-placeholder {
+  flex: 1;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.shortcut-hint {
+  display: flex;
+  gap: 4px;
+}
+
+.key {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.spinning {
+  animation: spin-slow 1s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .search-placeholder, .shortcut-hint {
+    display: none;
+  }
+  .search-trigger {
+    width: auto;
+    padding: 8px;
+  }
+  .brand-text span {
+    display: none;
+  }
+}
